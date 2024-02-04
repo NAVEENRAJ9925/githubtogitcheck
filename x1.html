@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>form</title>
+</head>
+<form action="load.html" method="get" id="myform" name="myform" onsubmit ="return validate()" >
+	<input type="text" value="" id="name" name="name"/>
+	<span id ="isname"></span>
+	<input type="submit" value="SUBMIT"/>
+
+</form>
+<script type="text/javascript">
+	function validate()
+	{
+		if(document.getElementById("name").value=="")
+		{
+			document.getElementById("isname").innerHTML="please enter name";
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+</script>
+</html>
